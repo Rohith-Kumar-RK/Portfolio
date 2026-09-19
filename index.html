@@ -139,6 +139,19 @@
 		.zoom-effect:hover {
 			transform: scale(1.1);
 		}
+
+		.blog-entry {
+			width: 100%;
+			height: 100%;
+		}
+
+		.col-md-4 {
+			margin-bottom: 30px;
+		}
+
+		.blog-entry .text {
+			height: 100%;
+		}
 	</style>
 
 
@@ -288,11 +301,13 @@
 										<span class="skill-tag">PyTorch</span>
 										<span class="skill-tag">TensorFlow</span>
 										<span class="skill-tag">Keras</span>
+										<span class="skill-tag">ONNX</span>
+										<span class="skill-tag">Quantization</span>
 										<span class="skill-tag">Scikit-learn</span>
 										<span class="skill-tag">OpenCV</span>
 										<span class="skill-tag">FastAPI</span>
 										<span class="skill-tag">Flask</span>
-										<span class="skill-tag">Django</span>
+										<!-- <span class="skill-tag">Django</span> -->
 										<span class="skill-tag">Docker</span>
 										<span class="skill-tag">Streamlit</span>
 									</div>
@@ -303,7 +318,7 @@
 										<span class="skill-tag">SQL</span>
 										<!-- <span class="skill-tag">Java</span> -->
 										<span class="skill-tag">MongoDB</span>
-										<span class="skill-tag">MySQL</span>
+										<span class="skill-tag">Neo4j</span>
 										<span class="skill-tag">Qdrant</span>
 										<span class="skill-tag">FAISS</span>
 										<span class="skill-tag">Pandas</span>
@@ -346,7 +361,7 @@
 									<li class="d-flex"><span>Languages:</span> <span>English, Telugu</span></li>
 									<li class="d-flex"><span>Interest:</span> <span> Badminton</span></li>
 								</ul>
-								
+
 
 								</ul>
 							</div>
@@ -474,7 +489,7 @@
 			<div class="row">
 				<div class="col-md-6">
 					<div class="resume-wrap ftco-animate">
-						<span class="date">2022-2024</span>
+						<span class="date">2022-2025</span>
 						<h2>Bacholers of Technology (B.Tech)</h2>
 						<span class="position">VRSEC, Vijayawada</span>
 						<p class="mt-4">Grade: 8.33</p>
@@ -483,7 +498,7 @@
 
 				<div class="col-md-6">
 					<div class="resume-wrap ftco-animate">
-						<span class="date">2019-2021</span>
+						<span class="date">2019-2022</span>
 						<h2>Diploma in Computer Science</h2>
 						<span class="position">Govt. Polytechnic College, Proddatur</span>
 						<p class="mt-4">Grade: 8.25</p>
@@ -495,7 +510,7 @@
 				<div class="col-md-6 text-center ftco-animate">
 					<!-- <p><a href="https://drive.google.com/file/d/1LzYqj-TgzHcFPqq9bgh0_xVZABXnTm3-/view?usp=sharing"
 							class="btn btn-primary py-4 px-5">Download CV</a></p> -->
-					<p><a href="https://drive.google.com/file/d/1-2Y5xsqHNw89axGhO4kwH96T477_3W8e/view?usp=sharing"
+					<p><a href="https://drive.google.com/file/d/1wD43vDfGlcuxxYb1pVTxBqhnFxaC5NKf/view?usp=sharing"
 							class="btn btn-primary py-4 px-5">Download CV</a></p>
 				</div>
 			</div>
@@ -514,143 +529,100 @@
 						and AI agents.</p>
 				</div>
 			</div>
-			<div class="row d-flex">
+
+			<div class="row d-flex"> <!-- Project 1 -->
 				<div class="col-md-4 d-flex ftco-animate">
-					<div class="blog-entry justify-content-end">
-						<div class="text mt-3 float-right d-block">
-							<h3 class="heading">Deep Learning-Based End-to-End Speech Enhancement, Packet Loss
-								Concealment, and Automatic Speech Recognition</h3>
-
-							<p>
-								Developed an end-to-end speech enhancement and packet loss concealment system using
-								Wavelet Denoising, Wiener and Kalman Filtering,
-								and a CUDA-accelerated Conditional GAN (U-Net + PatchGAN), improving reconstructed audio
-								SNR from -31 dB to 12.18 dB.
-							</p>
-
-							<p>
-								Integrated Wav2Vec 2.0 (HuggingFace) for
-								speech-to-text transcription and evaluated performance using BLEU <strong> 87%
-								</strong>, WER <strong> 8.0% </strong>, and CER <strong>7.8% </strong>.
-							</p>
-
-							<!-- <p>
-								Deployed the containerized full-stack application using FastAPI, Streamlit, and Docker.
-							</p> -->
+					<div class="blog-entry w-100">
+						<div class="text mt-3 d-block">
+							<h3 class="heading"> Adversarial Research Council -- Multi-Agent Self-Correcting Research
+								System </h3>
+							<p> Built a 5-agent LangGraph system (Scout, Analyst, Skeptic, Memory Keeper, Synthesizer)
+								where research claims must survive adversarial challenge before publishing, instead of
+								trusting single-pass LLM output. </p>
+							<p> Designed a Skeptic agent that actively searches for counter-evidence against every
+								claim, driving up to 3 rounds of challenge-and-revise, with surviving claims scored 0–1
+								for confidence. </p>
+							<p> Implemented Neo4j graph memory that cross-checks new findings against past research
+								sessions and auto-flags contradictions over time. </p>
+							<p> Built a live Streamlit dashboard streaming the agent debate in real time, backed by
+								Qdrant vector memory for traceable, source-tagged evidence retrieval. </p>
 						</div>
 					</div>
-				</div>
-
+				</div> <!-- Project 2 -->
 				<div class="col-md-4 d-flex ftco-animate">
-					<div class="blog-entry justify-content-end">
-						<div class="text mt-3 float-right d-block">
-							<h3 class="heading">ARNA - Agricultural Real Time Neural Advisor with Potato Crop Disease
-								Detection and Fertilizer Recommendation Bot
+					<div class="blog-entry w-100">
+						<div class="text mt-3 d-block">
+							<h3 class="heading"> Deep Learning-Based End-to-End Speech Enhancement, Packet Loss
+								Concealment, and Automatic Speech Recognition </h3>
+							<p> Developed an end-to-end speech enhancement and packet loss concealment system using
+								Wavelet Denoising, Wiener and Kalman Filtering, and a CUDA-accelerated Conditional GAN
+								(U-Net + PatchGAN), improving reconstructed audio SNR from -31 dB to 12.18 dB. </p>
+							<p> Integrated Wav2Vec 2.0 (HuggingFace) for speech-to-text transcription and evaluated
+								performance using BLEU <strong>87%</strong>, WER <strong>8.0%</strong>, and CER
+								<strong>7.8%</strong>.
+							</p>
+						</div>
+					</div>
+				</div> <!-- Project 3 -->
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry w-100">
+						<div class="text mt-3 d-block">
+							<h3 class="heading"> ARNA - Agricultural Real Time Neural Advisor with Potato Crop Disease
+								Detection and Fertilizer Recommendation Bot </h3>
+							<p> Developed an AI-powered potato disease detection system using CNN and OpenCV for image
+								preprocessing, classifying leaves into Early Blight, Late Blight, and Normal categories,
+								along with a Random Forest-based fertilizer recommendation system. </p>
+							<p> Built an agricultural RAG chatbot using FAISS, Sentence Transformers, and Gemini Flash
+								to retrieve relevant knowledge and generate context-grounded responses, evaluated the
+								pipeline using RAGAS. </p>
+							<p> Optimized and deployed the application using ONNX and quantization, with a FastAPI
+								backend, React.js frontend, Docker containerization, and Git/GitHub for version control.
+							</p>
+						</div>
+					</div>
+				</div> <!-- Project 4 -->
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry w-100">
+						<div class="text mt-3 d-block">
+							<h3 class="heading"> Explainable AI in Supervised Learning (Finance) </h3>
+							<p> Researched multi-horizon stock price prediction using Machine Learning and Deep Learning
+								models for forecasting across multiple time horizons. </p>
+							<p> Applied SHAP, LIME, and Explainable Boosting Machines (EBM) to interpret model
+								predictions and identify influential features. </p>
+							<p> Used counterfactual analysis to examine how changes in input features could influence
+								predicted stock prices and improve prediction interpretability. </p>
+						</div>
+					</div>
+				</div> <!-- Project 5 -->
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry w-100">
+						<div class="text mt-3 d-block">
+							<h3 class="heading"> A Decision Making System Based on Remote Sensing for Tomato Crop
+								Cultivation Using Deep Learning </h3>
+							<p> Developed a GIS and CNN-LSTM-based Decision-Making System for tomato cultivation in
+								Madanapalli, integrating Sentinel-2 satellite data, NDVI, soil moisture, and
+								ground-truth data. </p>
+							<p> Processed multi-year remote sensing data using QGIS to identify optimal planting
+								periods, supporting precision agriculture, crop-loss reduction, and improved yield
+								efficiency. </p>
+						</div>
+					</div>
+				</div> <!-- Project 6 -->
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry w-100">
+						<div class="text mt-3 d-block">
+							<h3 class="heading"> Remote Sensing Based Tomato Crop Yield and Price Prediction using ML/DL
 							</h3>
-
-							<p>
-								Developed an AI-powered potato disease detection system using CNN and OpenCV for image
-								preprocessing, classifying leaves into Early Blight,
-								Late Blight, and Normal categories, along with a Random Forest-based fertilizer
-								recommendation system.
-							</p>
-
-							<p>
-								Built an agricultural RAG chatbot using FAISS, Sentence Transformers, and
-								Gemini Flash to retrieve relevant knowledge and generate context-grounded responses,
-								evaluated the pipeline using RAGAS.
-							</p>
-
-							<p>
-								Optimized and deployed the application using ONNX and quantization, with a FastAPI
-								backend,
-								React.js frontend, Docker containerization, and Git/GitHub for version control.
-							</p>
+							<p> Integrated Sentinel-2 remote sensing data, QGIS, Google Earth Engine (GEE), and
+								ground-truth data to classify tomato crops, calculate cultivated area, and generate NDVI
+								time-series data (2014–2023). </p>
+							<p> Developed a CNN-GRU hybrid model to extract spatial-temporal features from NDVI
+								time-series data and predict tomato crop yield per hectare. </p>
+							<p> Developed a Random Forest ensemble model, fine-tuned using Grid Search, to predict
+								tomato market prices based on predicted crop yield and historical price data. </p>
 						</div>
 					</div>
 				</div>
-
-				<div class="col-md-4 d-flex ftco-animate">
-					<div class="blog-entry">
-						<div class="text mt-3 float-right d-block">
-							<h3 class="heading">Explainable AI in Supervised learning (Finance)</h3>
-
-							<p>
-								Researched multi-horizon stock price prediction using Machine Learning and
-								Deep Learning models for forecasting across multiple time horizons.
-							</p>
-							<p>Applied SHAP, LIME, and Explainable Boosting Machines (EBM) to interpret model
-								predictions and identify influential features.</p>
-							<p>
-								Used counterfactual analysis to examine how changes in input features
-								could influence predicted stock prices and improve prediction interpretability.
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="row d-flex">
-					<div class="col-md-4 d-flex ftco-animate">
-						<div class="blog-entry justify-content-end">
-							</a>
-							<div class="text mt-3 float-right d-block">
-
-								<h3 class="heading">A Decision Making System Based
-									on Remote Sensing for Tomato Crop
-									Cultivation Using Deep Learning </h3>
-
-								<p>
-									Developed a GIS and CNN-LSTM-based Decision-Making System for tomato cultivation in
-									Madanapalli,
-									integrating Sentinel-2 satellite data, NDVI, soil moisture, and ground-truth data.
-								</p>
-
-								<p>
-									Processed multi-year remote sensing data using QGIS to identify optimal planting
-									periods,
-									supporting precision agriculture, crop-loss reduction, and improved yield
-									efficiency.
-								</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 d-flex ftco-animate">
-						<div class="blog-entry justify-content-end">
-							<div class="text mt-3 float-right d-block">
-
-								<h3 class="heading">Remote Sensing based Tomato Crop Yield and Price Prediction using
-									ML/DL</a></h3>
-								<p>Integrated Sentinel-2 remote sensing data, QGIS, Google Earth Engine (GEE), and
-									ground-truth data to classify tomato crops,
-									calculate cultivated area, and generate NDVI time-series data (2014–2023).</p>
-								<p>Developed a CNN-GRU hybrid model to extract spatial-temporal
-									features from NDVI time-series data and predict tomato crop yield per hectare.</p>
-								<p>Developed a Random Forest ensemble model, fine-tuned using Grid Search,
-									to predict tomato market prices based on the predicted crop yield and historical
-									price data.</p>
-							</div>
-						</div>
-					</div>
-					<!-- <div class="col-md-4 d-flex ftco-animate">
-						<div class="blog-entry">
-							<div class="text mt-3 float-right d-block">
-
-								<h3 class="heading">dSpark — Deadline-Based Resource Allocation Framework</h3>
-
-								<p>
-									Developed a distributed resource allocation framework using Apache Spark
-									to improve deadline-aware scheduling and resource utilization.
-								</p>
-
-								<p>
-									Evaluated workload characteristics and resource allocation strategies
-									to support efficient execution of distributed data-processing tasks.
-								</p>
-							</div>
-						</div>
-					</div> -->
-				</div>
-				<br>
-
 			</div>
 	</section>
 
@@ -664,7 +636,7 @@
 		</div>
 		<br>
 
-		<div class="row">
+		<div class="row justify-content-center">
 			<div class="col-md-6">
 				<div class="resume-wrap ftco-animate">
 					<h2>A Decision Making System Based
@@ -685,36 +657,36 @@
 				</div>
 				<div class="row justify-content-center mt-5">
 					<div class="col-md-6 text-center ftco-animate">
-						<p><a href="https://doi.org/10.1007/978-981-96-8343-7_26"
-								class="btn btn-primary py-4 px-5">Read More</a></p>
+						<p><a href="https://doi.org/10.1007/978-981-96-8343-7_26" class="btn btn-primary py-4 px-5">Read
+								More</a></p>
 					</div>
 				</div>
 			</div>
 
 			<!-- <div class="col-md-6"> -->
-				<!-- <div class="resume-wrap ftco-animate"> -->
-					<!-- <h2>Fusion of Machine Learning and Deep Learning:A Hybrid Approach for Deepfake Detection -->
-					<!-- </h2>/\ -->
-					<!-- <h2>AI Marketing Enabler Intern</h2> -->
-					<!-- <span class="position">ICCCNT-2024</span> -->
-					<!-- <p class="mt-4">iQuanti is a data-driven digital marketing analytics and solutions company, helps top 100 global brands.  -->
-					<!-- <ul> -->
-						<!-- <li> Created a diverse dataset from YouTube, Google, and public sources for deepfake detection. -->
-						<!-- </li> -->
-						<!-- <li>Developed hybrid models combining VGG16, MLP, XGBoost, and Random Forest for high accuracy. -->
-						<!-- </li> -->
-						<!-- <li>Enhanced deepfake detection reliability with advanced feature extraction and ML techniques. -->
-						<!-- </li> -->
+			<!-- <div class="resume-wrap ftco-animate"> -->
+			<!-- <h2>Fusion of Machine Learning and Deep Learning:A Hybrid Approach for Deepfake Detection -->
+			<!-- </h2>/\ -->
+			<!-- <h2>AI Marketing Enabler Intern</h2> -->
+			<!-- <span class="position">ICCCNT-2024</span> -->
+			<!-- <p class="mt-4">iQuanti is a data-driven digital marketing analytics and solutions company, helps top 100 global brands.  -->
+			<!-- <ul> -->
+			<!-- <li> Created a diverse dataset from YouTube, Google, and public sources for deepfake detection. -->
+			<!-- </li> -->
+			<!-- <li>Developed hybrid models combining VGG16, MLP, XGBoost, and Random Forest for high accuracy. -->
+			<!-- </li> -->
+			<!-- <li>Enhanced deepfake detection reliability with advanced feature extraction and ML techniques. -->
+			<!-- </li> -->
 
-					<!-- </ul> -->
-					<!-- </p> -->
-				<!-- </div> -->
-				<!-- <div class="row justify-content-center mt-5"> -->
-					<!-- <div class="col-md-6 text-center ftco-animate"> -->
-						<!-- <p><a href="https://ieeexplore.ieee.org/abstract/document/10724874" -->
-								<!-- class="btn btn-primary py-4 px-5">Read More</a></p> -->
-					<!-- </div> -->
-				<!-- </div> -->
+			<!-- </ul> -->
+			<!-- </p> -->
+			<!-- </div> -->
+			<!-- <div class="row justify-content-center mt-5"> -->
+			<!-- <div class="col-md-6 text-center ftco-animate"> -->
+			<!-- <p><a href="https://ieeexplore.ieee.org/abstract/document/10724874" -->
+			<!-- class="btn btn-primary py-4 px-5">Read More</a></p> -->
+			<!-- </div> -->
+			<!-- </div> -->
 			<!-- </div> -->
 		</div>
 
@@ -793,7 +765,7 @@
 								<span class="icon-phone2"></span>
 							</div>
 							<h3 class="mb-4">Contact Number</h3>
-							<p><a href="tel:+917020276503">+91-9121262428</a></p>
+							<p><a href="tel:+919121262428">+91-9121262428</a></p>
 						</div>
 					</div>
 					<div class="col-md-6 col-lg-3 d-flex ftco-animate">
@@ -802,7 +774,7 @@
 								<span class="icon-paper-plane"></span>
 							</div>
 							<h3 class="mb-4">Email Address</h3>
-							<p><a href="mailto:adihelode12590@gmail.com">rohithkumar026@gmail.com</a></p>
+							<p><a href="mailto:rohithkumarcm026@gmail.com">rohithkumarcm026@gmail.com</a></p>
 						</div>
 					</div>
 					<div class="col-md-6 col-lg-3 d-flex ftco-animate">
@@ -812,7 +784,7 @@
 							</div>
 							<h3 class="mb-4">Download Resume</h3>
 							<p><a
-									href="https://drive.google.com/file/d/1-2Y5xsqHNw89axGhO4kwH96T477_3W8e/view?usp=sharing">My_Resume_Link</a>
+									href="https://drive.google.com/file/d/1wD43vDfGlcuxxYb1pVTxBqhnFxaC5NKf/view?usp=sharing">My_Resume_Link</a>
 							</p>
 						</div>
 					</div>
@@ -830,8 +802,7 @@
 							class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
 							<li class="ftco-animate normal-txt">Find me on </li>
 							<!-- <li class="ftco-animate"><a href="https://www.youtube.com/@RishabhMishraOfficial"><span class="icon-youtube"></span></a></li> -->
-							<li class="ftco-animate"><a
-									href="https://www.linkedin.com/in/rohithkumar026/"><span
+							<li class="ftco-animate"><a href="https://www.linkedin.com/in/rohithkumar026/"><span
 										class="icon-linkedin"></span></a></li>
 							<!-- <li class="ftco-animate"><a href="https://twitter.com/rishabhnmishra"><span class="icon-twitter"></span></a></li> -->
 							<!-- <li class="ftco-animate"><a href="https://twitter.com/rishabhnmishra"><span class="icon-facebook"></span></a></li> -->
